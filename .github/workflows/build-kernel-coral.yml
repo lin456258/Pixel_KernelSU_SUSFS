@@ -4,7 +4,7 @@ on:
   workflow_call:  # This allows this workflow to be called from another workflow
   
 jobs:
-  build-kernel-4-14-kernelsu-susfs:
+  build-kernel-4-19-kernelsu-susfs:
     runs-on: ubuntu-22.04
 
     steps:
@@ -67,7 +67,7 @@ jobs:
           
           # Initialize and sync kernel source
           echo "Initializing and syncing kernel source..."
-          $REPO git clone https://github.com/zfdx123/kernel_xiaomi_alioth --depth=1
+          $REPO git clone https://github.com/zfdx123/kernel_xiaomi_alioth.git --depth=1
 
 
           # Sync repo and apply patches
