@@ -67,7 +67,7 @@ jobs:
           
           # Initialize and sync kernel source
           echo "Initializing and syncing kernel source..."
-          $REPO init -u https://github.com/zfdx123/kernel_xiaomi_alioth --repo-rev=v2.16 --depth=1
+          $REPO git clone https://github.com/zfdx123/kernel_xiaomi_alioth --depth=1
 
 
           # Sync repo and apply patches
