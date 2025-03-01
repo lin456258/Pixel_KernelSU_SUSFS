@@ -103,8 +103,8 @@ jobs:
           patch -p1 --forward < 10_enable_susfs_for_ksu.patch || true
           
           # Change to common directory and apply SUSFS patch
-          cd ../common
-          patch -p1 < 50_add_susfs_in_kernel-4.14.patch || true
+          cd ../
+          patch -p1 < 50_add_susfs_in_kernel-4.19.patch || true
           
       - name: Apply Next-SUSFS Patches
         run: |
